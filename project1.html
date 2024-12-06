@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <P align="right">Группа <u>ЭФБО-01-23</u></P>
+    <P id="name" align="right">Акимова К.В.</P>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrap">
+                <ul class="nav-menu">
+                    <li><a href="/главная_страница1.html">Главная</a></li>
+                    <li><a href="/first_semestr.html">Первый семестр</a></li>
+                    <li>Второй семестр</li>
+                    <li>Услуги</li>
+                    <li>Авторизация</li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <H2 align="center" id="one">Разработка веб-приложений</H2>
+    <div class="card">
+        <div class="card-block"></div>
+        <div class="card-block"></div>
+        <div class="card-block"></div>
+      </div>
+    
+      <div class="things">
+        <div class="ccontainer">
+            <div class="wwrap">
+                <ul class="mmenu">
+                    <li>Сайт-визитка</li>
+                    <li>Корпоративный сайт</li>
+                    <li>Интернет-магазин</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="b_1">Заказать</button><button class="b_1">Заказать</button><button class="b_1">Заказать</button>
+    </div>
+    <H3 class="frontend">Фронтенд</H3>
+    <div class="d-2">
+        <P id="d-2">Фронтенд (или клиентская часть) - это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</P>
+    </div>
+    <H3 class="backend">Бэкенд</H3>
+    <div class="d-3">
+        <P id="d-3">Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или РНР, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда обеспечить стабильную работу приложения и безопасность данных.</P>
+    </div>
+  <!-- Модальное окно с формой -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <form id="contactForm">
+            <button type="button" class="close">X</button>
+
+            <label for="name">Имя:</label>
+            <input type="text" id="fio" name="name" required>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="phone" id="phone" name="phone">
+
+            <label for="comments">Комментарии:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <input type="checkbox" id="checkbox" value="Я согласен на обработку персональных данных" style="width: auto; margin-right: 10px; transform: scale(1.5);">
+            <label>Я согласен на обработку персональных данных</label>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>

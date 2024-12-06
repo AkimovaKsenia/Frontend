@@ -1,0 +1,44 @@
+body{
+    background-image: url(/горы.png);
+    background-position: 0px -2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text1{
+    margin-top: 400px;
+    color: aliceblue;
+    font-size: 150px;
+
+}
+.text2{
+    font-size: 20px;
+    color: aliceblue;
+
+}
+.text3{
+    color: aliceblue;
+
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    font-weight: bold;
+    margin-right: 100px;
+}
+.d-2{
+    margin-left: 800px;
+}
+
+.d_1{
+    
+    float:right;
+    background-color: aquamarine;
+}
+
+
+
+

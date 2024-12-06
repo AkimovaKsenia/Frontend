@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+</head>
+<body>
+    <style>
+        /* Стиль для заголовка с анимацией */
+        h2 {
+            animation: fadeInUp 1s ease-out; /* Появление с эффектом подъема */
+        }
+
+        /* Анимация для текста "Данные успешно отправлены" */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* Начальная позиция ниже */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Конечная позиция */
+            }
+        }
+    </style>
+
+    <div id="userInfo">
+        <!-- Здесь будет отображаться информация о пользователе -->
+    </div>
+
+    <script>
+        // Получаем данные из localStorage
+        const formData = JSON.parse(localStorage.getItem('formData'));
+
+        // Проверяем, есть ли данные в localStorage
+        if (formData) {
+            // Отображаем данные на странице
+            const userInfoDiv = document.getElementById('userInfo');
+            userInfoDiv.innerHTML = `
+                <h2>Данные успешно отправлены</h2>
+                <p3>Информация о пользователе</p3>
+                <p><strong>Имя:</strong> ${formData.name}</p>
+                <p><strong>Email:</strong> ${formData.email}</p>
+                <p><strong>Телефон:</strong> ${formData.phone}</p>
+                <p><strong>Комментарии:</strong> ${formData.comments}</p>
+                <p><strong>Дата:</strong> ${formData.date}</p>
+            `;
+        } else {
+            // Если данных нет, отображаем сообщение
+            document.getElementById('userInfo').innerHTML = '<p>Нет данных для отображения.</p>';
+        }
+    </script>
+</body>
+</html>

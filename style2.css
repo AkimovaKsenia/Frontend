@@ -1,0 +1,499 @@
+body{
+    background:
+    linear-gradient(
+        105deg,
+        rgba(146, 4, 98, 0.2) 30%,
+        rgb(235, 100, 205)96%
+      )
+}
+h2 {
+    font-size: 36px; /* Начальный размер шрифта */
+    transition: transform 0.3s ease-in-out; /* Плавный переход для анимации */
+}
+
+/* Эффект увеличения при наведении */
+h2:hover {
+    transform: scale(1.2); /* Увеличение размера на 20% */
+}
+/* Изначальный стиль параграфа */
+p {
+    background-color: #ea7bd4; /* Начальный цвет фона */
+    padding: 20px; /* Немного отступов для удобства */
+    transition: background-color 0.5s ease-in-out; /* Плавное изменение фона */
+}
+
+/* Стиль при наведении мыши */
+p:hover {
+    background-color: #960371; /* Новый цвет фона при наведении */
+}
+.img{
+    margin-left: 20%;
+}
+.navbar{
+    margin-left: 200px;
+    width:1300px;
+    height:100px;
+    box-shadow: 0px 4px 10px #ea1494;
+}
+.container{
+    height:inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+li a{
+    display: inline;
+    color: black;
+    text-decoration: none;   
+}
+li a:hover{
+    color: red;
+}
+
+.nav-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+li:hover{
+    color: red;
+}
+.navigation{
+    margin-left: 300px;
+    width:1300px;
+    height:50px;   
+}
+.nav-container{
+    height:inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+TABLE {
+    background-color:  rgb(249, 213, 241) ;
+    margin-top: 25px;
+    margin-left: 40%;
+    width: 850px; 
+    height: 500px;
+    border: 1px solid black;
+    border-bottom: none;
+   }
+   TD, TH {
+    padding: 3px;   }
+   TH {
+    text-align: left; /* Выравнивание по левому краю */
+    background: black; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: 1px solid white; /* Рамка вокруг ячеек */
+   }
+   TD {
+    border-bottom: 1px solid black; /* Линия снизу */
+   }
+.cot{
+    float:left;
+    margin-left: 30px;
+    margin-top: -500px;
+    box-shadow: 0px 4px 10px #ea1494;
+    
+
+}
+.lk{
+    margin-top: 60px;
+    margin: 50px; 
+    margin-left: 30%;
+    width: 1048px;
+    height: auto;
+    position:relative;
+    top: -100px;
+}
+#one{
+  font-weight: 700;
+  font-style: normal;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.karta{
+    margin-top: 30px;
+    margin-left: 480px;
+    float:center;
+}
+.pdf{
+    margin-top: 30px;
+    margin-left: 480px;
+    float:center;
+}
+@media (max-width: 1500px) {
+    .navbar{
+        margin-left: 3px;
+        width:1500px;
+        height:120px;
+        box-shadow: 0px 4px 10px #ea1494;
+    }
+
+    .order-button {
+        font-size: 70px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    }
+
+    li{
+        
+        display: inline;
+        font-weight: bold;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    body{
+        background:
+        linear-gradient(
+            105deg,
+            rgba(146, 4, 98, 0.2) 30%,
+            rgb(235, 100, 205)96%
+          )
+    }
+    .cot{
+        
+        margin-left: 5px;
+        margin-top: -500px;
+        box-shadow: 0px 4px 10px #ea1494;
+    
+    }
+   table{
+    float:left;
+    margin-left: 600px ;
+   }
+   #one{
+    margin-left: 400px;
+    font-weight: 700;
+    font-style: normal;
+      margin-top: 20px;
+      font-size: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .navbar{
+        margin-left: 3px;
+        width:1500px;
+        height:120px;
+        box-shadow: 0px 4px 10px #ea1494;
+    }
+
+    .order-button {
+        font-size: 70px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    }
+
+    li{
+        
+        display: inline;
+        font-weight: bold;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    body{
+        background:
+        linear-gradient(
+            105deg,
+            rgba(146, 4, 98, 0.2) 30%,
+            rgb(235, 100, 205)96%
+          )
+    }
+    .cot{
+        float: left;
+        width: 500px;
+        height: 500px;
+        margin-left: 5px;
+        margin-top: -500px;
+        box-shadow: 0px 4px 10px #ea1494;
+    
+    }
+   table{
+    float:left;
+    margin-left: 600px ;
+    width: 1000px;
+    height: 600px;
+   }
+   #one{
+    margin-left: 300px;
+    font-weight: 700;
+    font-style: normal;
+      margin-top: 20px;
+      font-size: 60px;
+  }
+  
+.karta{
+    margin-top: 300px;
+    
+}
+.k{
+    margin-left: 500px;
+}
+}
+@media (max-width: 1000px) {
+    .navbar{
+        margin-left: 3px;
+        height:180px;
+        box-shadow: 0px 4px 10px #ea1494;
+    }
+
+    .order-button {
+        font-size: 70px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    }
+
+    li{
+        
+        display: inline;
+        font-weight: bold;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    body{
+        background:
+        linear-gradient(
+            105deg,
+            rgba(146, 4, 98, 0.2) 30%,
+            rgb(235, 100, 205)96%
+          )
+    }
+    .cot{
+        float: left;
+        width: 500px;
+        height: 500px;
+        margin-left: 5px;
+        margin-top: -500px;
+        box-shadow: 0px 4px 10px #ea1494;
+    
+    }
+   table{
+    float:left;
+    margin-left: 600px ;
+    width: 1000px;
+    height: 600px;
+   }
+   #one{
+    margin-left: 400px;
+    font-weight: 700;
+    font-style: normal;
+      margin-top: 20px;
+      font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+    .navbar{
+        margin-left: 3px;
+        width:780px;
+        height:120px;
+        box-shadow: 0px 4px 10px #ea1494;
+    }
+
+    .order-button {
+        font-size: 70px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    }
+
+    li{
+        margin-right: 60px;
+        display: inline;
+        font-weight: bold;
+        margin-right: -20px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    img {
+        float:center;
+        margin-right: 180px;
+        
+    }
+
+}
+@media (max-width: 480px) {
+    .navbar{
+        margin-left: 3px;
+        width:1500px;
+        height:120px;
+        box-shadow: 0px 4px 10px #ea1494;
+    }
+
+    .order-button {
+        font-size: 70px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    }
+
+    li{
+        
+        display: inline;
+        font-weight: bold;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    body{
+        background:
+        linear-gradient(
+            105deg,
+            rgba(146, 4, 98, 0.2) 30%,
+            rgb(235, 100, 205)96%
+          )
+    }
+    .cot{
+        
+        margin-left: 5px;
+        margin-top: -500px;
+        box-shadow: 0px 4px 10px #ea1494;
+    
+    }
+   table{
+    float:left;
+    margin-left: 600px ;
+   }
+   #one{
+    margin-left: 400px;
+    font-weight: 700;
+    font-style: normal;
+      margin-top: 20px;
+      font-size: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .navbar{
+        margin-left: 3px;
+        width:400pxpx;
+        height:200px;
+        box-shadow: 0px 4px 10px #ea1494;
+    }
+
+    .order-button {
+        font-size: 70px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    }
+
+    li{
+        
+        display: inline;
+        font-weight: bold;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 40px;
+    }
+    
+    body{
+        background:
+        linear-gradient(
+            105deg,
+            rgba(146, 4, 98, 0.2) 30%,
+            rgb(235, 100, 205)96%
+          )
+    }
+    .cot{
+        float: left;
+        width: 500px;
+        height: 500px;
+        margin-left: 5px;
+        margin-top: -500px;
+        box-shadow: 0px 4px 10px #ea1494;
+    
+    }
+   table{
+    float:left;
+    margin-left: 600px ;
+    width: 1000px;
+    height: 600px;
+   }
+   #one{
+    margin-left: 300px;
+    font-weight: 700;
+    font-style: normal;
+      margin-top: 20px;
+      font-size: 60px;
+  }
+  
+.karta{
+    margin-top: 300px;
+    
+}
+.k{
+    margin-left: 500px;
+}
+}
+
+#LTable {
+    display: none;
+    opacity: 0;  /* Начальная невидимость */
+    transition: opacity 1s ease-in-out;  /* Плавное появление */
+}
+
+/* Класс для отображения таблицы */
+#LTable.show {
+    display: block;
+    opacity: 1; /* После добавления класса становиться видимой */
+}
+
+/* Стили для кнопки */
+#lecturesButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e73216;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#lecturesButton:hover {
+    background-color: #45a049;
+}
+
+/* Стили для таблицы */
+
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
