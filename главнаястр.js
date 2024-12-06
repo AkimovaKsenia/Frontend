@@ -1,6 +1,4 @@
-function showMessage(message) {
-    console.log(message);
-}
+
 
 function logCurrentTime() {
     const now = new Date();
