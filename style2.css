@@ -1,11 +1,26 @@
-body{
-    background:
-    linear-gradient(
-        105deg,
-        rgba(146, 4, 98, 0.2) 30%,
-        rgb(235, 100, 205)96%
-      )
+body {
+    position: relative;
+    background-image: url(https://i.pinimg.com/736x/00/a8/d1/00a8d1a3a5e6b556b57375ab0ee3cf78.jpg);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Обеспечивает, что тело будет как минимум на всю высоту экрана */
 }
+
+/* Псевдоэлемент, который накладывает розовый полупрозрачный фон */
+body::after {
+    content: "";
+    position: fixed; /* Это важно, чтобы фон не скроллился вместе с контентом */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Растягиваем на всю высоту окна */
+    background-color: rgba(242, 193, 219, 0.9); /* Полупрозрачный розовый фон */
+    pointer-events: none; /* Чтобы не мешал взаимодействию с элементами */
+    z-index: -1; /* Размещаем псевдоэлемент позади всего контента */
+}
+
+
+
 h2 {
     font-size: 36px; /* Начальный размер шрифта */
     transition: transform 0.3s ease-in-out; /* Плавный переход для анимации */
@@ -15,21 +30,11 @@ h2 {
 h2:hover {
     transform: scale(1.2); /* Увеличение размера на 20% */
 }
-/* Изначальный стиль параграфа */
-p {
-    background-color: #ea7bd4; /* Начальный цвет фона */
-    padding: 20px; /* Немного отступов для удобства */
-    transition: background-color 0.5s ease-in-out; /* Плавное изменение фона */
-}
-
-/* Стиль при наведении мыши */
-p:hover {
-    background-color: #960371; /* Новый цвет фона при наведении */
-}
 .img{
     margin-left: 20%;
 }
 .navbar{
+    background-color: rgba(242, 193, 219, 0.7);
     margin-left: 200px;
     width:1300px;
     height:100px;
@@ -476,24 +481,61 @@ TABLE {
 #lecturesButton {
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #e73216;
-    color: white;
+    padding: 12px 35px;
+    background-color: #ea1494;
+    color: rgb(3, 0, 0);
     border: none;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px; /* Сделаем края более округлыми */
+    background: linear-gradient(145deg, #ea1494, #c00378); /* Градиент для объема */
+    transition: transform 0.2s ease, background 0.2s ease; /* Плавные переходы */
+    box-shadow: none; /* Убираем тень */
 }
 
+/* Эффект при наведении */
 #lecturesButton:hover {
-    background-color: #45a049;
+    background: linear-gradient(145deg, #c00378, #ea1494); /* Перевернутый градиент */
+    transform: translateY(-6px); /* Поднимем кнопку выше для объема */
 }
 
-/* Стили для таблицы */
+/* Эффект при нажатии */
+#lecturesButton:active {
+    transform: translateY(2px); /* Кнопка немного опускается */
+    background: linear-gradient(145deg, #ea1494, #c00378); /* Возвращаем градиент */
+}
+
 
 
 th, td {
     padding: 8px;
     border: 1px solid #ddd;
     text-align: center;
+}
+/* Стили для кнопок */
+.styled-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 35px;
+    background-color: #ee2da1; /* Основной цвет */
+    color: rgb(8, 0, 0);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px; /* Скругленные углы */
+    background: linear-gradient(145deg, #ee2da1, #c00378); /* Градиент для объема */
+    transition: transform 0.2s ease, background 0.2s ease; /* Плавные переходы */
+    box-shadow: none; /* Убираем тень */
+}
+
+/* Эффект при наведении */
+.styled-button:hover {
+    background: linear-gradient(145deg, #c00378, #ee2da1); /* Перевернутый градиент */
+    transform: translateY(-6px); /* Поднимаем кнопку для объема */
+}
+
+/* Эффект при нажатии */
+.styled-button:active {
+    transform: translateY(2px); /* Кнопка немного опускается */
+    background: linear-gradient(145deg, #ee2da1, #c00378); /* Возвращаем градиент */
 }

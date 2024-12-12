@@ -10,15 +10,6 @@ function logCurrentTime() {
     console.log(`${hours}:${minutes}:${seconds}`);
 }
 
-// Функция для изменения цвета фона страницы
-function changeBackgroundColor(color) {
-    document.body.style.backgroundColor = color;
-}
-
-// Функция для сброса фона на исходный цвет (например, "white")
-function resetBackgroundColor() {
-    document.body.style.backgroundColor = "white";
-}
 
 function toggleVisibility(selector) {
     const element = document.querySelector(selector);
@@ -55,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     resetBackgroundColor();
     
-    changeBackgroundColor("lightblue");
     
     toggleVisibility(".img1");
     

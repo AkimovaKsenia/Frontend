@@ -108,7 +108,7 @@ image.addEventListener("click", function() {
         image.src = "https://i.pinimg.com/564x/72/71/1f/72711f9b3d262dc3709b00409eb41149.jpg";  // новое изображение
         isImageChanged = true;  // Запоминаем, что картинка была изменена
     } else {
-        alert("Не налегай, у меня не так много любимых преподавателей");
+        alert("Не налегай, у меня не так много красивых картинок");
     }
 });
 

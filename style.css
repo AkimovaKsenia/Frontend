@@ -1,15 +1,46 @@
-body{
-    background-color: rgb(242, 193, 219);
+body {
+    background-image: url(https://i.pinimg.com/736x/35/53/32/355332efff18c7304ea771f9a816e26f.jpg);
+    margin: 0;
+    padding: 0;
+    position: relative; /* Для псевдоэлемента ::after */
 }
+
+body::after {
+    content: "";
+    position: fixed; /* Позиционируем псевдоэлемент относительно окна */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Занимает всю высоту и ширину окна */
+    background-color: rgba(242, 193, 219, 0.5); /* Ваш цвет фона с прозрачностью */
+    pointer-events: none; /* Позволяет взаимодействовать с элементами страницы */
+    z-index: -1; /* Помещаем псевдоэлемент за основной контент */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/736x/35/53/32/355332efff18c7304ea771f9a816e26f.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Применяем блюр к фоновому изображению */
+    z-index: -2; /* Псевдоэлемент будет на самом заднем плане */
+}
+
 .img{
     margin-left: 70%;
 
 }
 .navbar{
+    background-color: rgb(242, 193, 219);
     margin-left: 200px;
     width:1300px;
     height:100px;
-    box-shadow: 0px 4px 10px #ea1494;
+    box-shadow: 0px 6px 10px #ea1494;
 }
 .container{
     height:inherit;
@@ -27,6 +58,7 @@ ul{
 }
 
 li{
+    
     display: inline;
     font-weight: bold;
     margin-right: 100px;
@@ -104,8 +136,8 @@ img {
     display: flex;
   }
   .card-block{
-    box-shadow: 0px 8px 16px #ea1494;
-    background-image: url(image.png);
+    box-shadow: 10px 11px 16px #ea1494;
+    background-image: url(https://i.pinimg.com/736x/cb/74/47/cb7447af761c442e52bc96c28fabba04.jpg);
     background-position: center;
     margin-right: 30px;
     width: 200px;
@@ -120,7 +152,7 @@ img {
 
         /* Вращение при наведении */
 .card-block:hover {
-            transform: rotate(200deg); /* Вращение на 360 градусов */
+            transform: rotate(10deg); /* Вращение на 360 градусов */
         }
   .things{
     margin-left: 440px;
@@ -152,16 +184,15 @@ img {
 }
 
   .buttons{
-    margin-top: 1%;
-    margin-left: 34%;
+    margin-left: 540px;
     display: flex;
   }
   .b_1{
-    height: 30px;
-    width: 95px;
-    margin-right: 140px;
+    height: 40px;
+    width: 115px;
+    margin-right: 120px;
     box-shadow: 0px 5px 10px 0px #ea1494; 
-    border-radius: 15px;
+    border-radius: 25px;
     transition: transform 0.3s ease;
   }
 
@@ -182,40 +213,97 @@ img {
     margin-left: 200px;
     font-size: 25px;
 }
-.modal{
-    display:none;
+.modal {
+    display: none;
     position: fixed;
-    z-index:1;
-    left:0;
-    top:0;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    overflow:auto;
-    background-color: rgba(0,0,0,0,4);
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content{
+.modal-content {
     background-color: #fefefe;
-    margin:15% auto;
-    padding:20px;
-    border:1px solid #888;
-    width: 600px;
-    height: 200px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    height: auto;  /* Убираем фиксированную высоту, чтобы форма подстраивалась под содержимое */
+    max-height: 80%;  /* Максимальная высота, чтобы форма не занимала весь экран */
+    overflow-y: auto; /* Для прокрутки в случае переполнения */
+    position: relative; /* Это нужно для позиционирования крестика */
 }
 
-.close{
-    color:#aaa;
-    float:right;
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #aaa;
     font-size: 28px;
     font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
- color: black;
- text-decoration: none;
- cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
-#comments{
-    margin-top: 20px;
+
+form {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    gap: 15px; /* Расстояние между элементами */
 }
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical; /* Даем возможность изменять размер по вертикали */
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #e880dc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f680bf;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: right;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+label[for="checkbox"] {
+    font-size: 14px;
+}
+

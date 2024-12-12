@@ -24,8 +24,8 @@
     <div class="nav-container">
         <div class="wrap">
             <ul class="menu">
-              <li>Лекции</li>
-              <li>Практики</li>
+              <li><a href="#lecturesButton"></a>Лекции</a></li>
+              <li><a href="#changePracticesButton"></a>Практики</a></li>
               <li><a href="#АдресВуза">Адрес вуза</a></li>
               <li><a href="#pdf">Рабочая программа</a></li>
             </ul>
@@ -34,9 +34,13 @@
   </div>
 
     <H2 align="center" id="one">Первый семестр</H2>
-   
-    <button id="changePracticesButton" style="display:block; margin: 20px auto;">Посмотреть практики второго семестра</button>
-    <button id="firstSemesterButton" style="display:none; margin: 20px auto;">Темы первого семестра</button>
+    <button id="changePracticesButton" class="styled-button">
+      Посмотреть практики второго семестра
+  </button>
+  <button id="firstSemesterButton" class="styled-button" style="display:none;">
+      Темы первого семестра
+  </button>
+  
 
     <table id="practicesTable" cellspacing="0">
         <tr>
@@ -110,22 +114,10 @@
       <div class="k">
        <h2 align = "center" id="АдресВуза" > Адрес Вуза</h2>
        <p align="center"> г. Москва, Проспект Вернадского, д. 78</p>
-       <object class="karta" data="<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">МИРЭА, Российский технологический университет</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.479921%2C55.670145&mode=search&oid=1084832794&ol=biz&z=17.4" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>"
+       <object class="karta" data="<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.479921%2C55.670145&mode=search&oid=1084832794&ol=biz&z=17.4" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>"
        </div> <h2 align="center">Рабочая программа</h2>
-        <object class="pdf" id="pdf" data="/Практика 1 ИИ_2022 (2).pdf" type="application/pdf" width="600" height="500"></object>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="..." alt="Первый слайд">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="..." alt="Второй слайд">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="..." alt="Третий слайд">
-            </div>
-          </div>
-        </div>
+        <object class="pdf" id="pdf" data="/Лекция 1.pdf" type="application/pdf" width="600" height="500"></object>
+        
 <script src="/firstsem.js"></script>
 </body>
 </html>
